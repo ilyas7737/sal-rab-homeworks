@@ -20,7 +20,7 @@ function parseProducts(json) {
 // Запишите в переменную length значение свойства products.length
 // Напишите цикл, в котором перебираете все products от 0 до (length - 1)
 // и выполняете addProduct с каждым элементом массива products (передавая элемент массива как аргумент)
-```javascript
+
 function renderProductsCards(json){
     clearProducts();
     products; 
@@ -31,4 +31,3 @@ function renderProductsCards(json){
      }
      
    }
-```

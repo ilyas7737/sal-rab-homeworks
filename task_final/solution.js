@@ -42,13 +42,11 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push({title: goods[i].title, count: goods[i].count});
     }
 
-
-    let data.order.address = "";
-    data.order.address = "ул, " + address.street;
-    data.order.address = "дом, " + address.house;
-    data.order.address = ", " + address.entrance; 
-    data.order.address = "подъезд, " + address.floor; 
-    data.order.address = " этаж, кв, " + address.flat;
+    data.order.address = "ул. " + address.street + ", " + 
+    "дом " + address.house + ", " +
+    address.entrance + " подъезд, " +
+    address.floor + " этаж, кв. " +
+    address.flat;
 
     data.order.sum = sum;
 
